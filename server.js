@@ -28,8 +28,7 @@ const __dirname = path.dirname(__filename);
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://ecommerce-frontend-4g10x9g0g-ngo-quang-thuys-projects.vercel.app',
-    'https://ecommerce-frontend-orcin-rho.vercel.app'
+    'https://ecommerce-frontend-xm9g.vercel.app'
   ],
   credentials: true
 }));
