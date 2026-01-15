@@ -25,7 +25,15 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://ecommerce-frontend-4g10x9g0g-ngo-quang-thuys-projects.vercel.app',
+    'https://ecommerce-frontend-orcin-rho.vercel.app'
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Serve images from the images folder
