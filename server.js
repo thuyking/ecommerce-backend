@@ -27,7 +27,7 @@ const __dirname = path.dirname(__filename);
 // Middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173',
+    'http://localhost:5000',
     'https://ecommerce-frontend-xm9g.vercel.app'
   ],
   credentials: true
