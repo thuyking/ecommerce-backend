@@ -26,7 +26,15 @@ const __dirname = path.dirname(__filename);
 
 // Middleware
 
-
+app.use(cors({
+  origin: [
+    'https://ecommerce-frontend-cg4n-eqg8k9zv5-ngo-quang-thuys-projects.vercel.app', // Domain Vercel của bạn
+    'http://localhost:5173', // Để bạn vẫn test được ở máy local
+    'http://localhost:3000'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  credentials: true // Cho phép gửi cookie/header nếu cần
+}));
 app.use(express.json());
 
 // Serve images from the images folder
